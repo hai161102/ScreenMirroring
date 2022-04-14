@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_setting"
+    tools:viewBindingIgnore="true"
+    tools:context=".SettingActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/go_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_setting_back"
+            android:foreground="@drawable/ic_setting_back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="25dp"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="123dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/how_to_use"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_setting_using"
+            android:foreground="@drawable/ic_setting_using"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:text="Cách sử dụng"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="123dp"
+        android:layout_height="73dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/remove_ad"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_setting_remove_ad"
+            android:foreground="@drawable/ic_setting_remove_ad"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom"
+            android:text="Gỡ quảng cáo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Cài đặt chung"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/feed_back"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_setting_send_feedback"
+            android:foreground="@drawable/ic_setting_send_feedback"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/share_f"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/ic_setting_share_f"
+            android:foreground="@drawable/ic_setting_share_f"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="380dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Giới thiệu"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_setting_rate"
+            android:foreground="@drawable/ic_setting_rate"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/private_key"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/ic_setting_private_user"
+            android:foreground="@drawable/ic_setting_private_user"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Phiên bản 1.0.1"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="560dp"/>
+</FrameLayout>
