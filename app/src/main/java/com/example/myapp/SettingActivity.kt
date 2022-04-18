@@ -14,7 +14,7 @@ class SettingActivity : AppCompatActivity()  {
             finish()
         }
         how_to_use.setOnClickListener {
-
+            startActivity(Intent(this,OnboardActivity::class.java))
         }
         remove_ad.setOnClickListener {
 
