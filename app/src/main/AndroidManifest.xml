@@ -24,6 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".OnboardActivity"></activity>
+        <activity android:name=".DeviceActivity"></activity>
     </application>
 
 </manifest>

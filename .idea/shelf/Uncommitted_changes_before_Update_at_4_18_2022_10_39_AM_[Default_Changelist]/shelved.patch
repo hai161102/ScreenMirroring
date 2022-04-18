@@ -1,0 +1,335 @@
+Index: app/src/main/res/layout/activity_onboard.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n             android:layout_width=\"match_parent\"\r\n             android:layout_height=\"match_parent\">\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_onboard.xml b/app/src/main/res/layout/activity_onboard.xml
+--- a/app/src/main/res/layout/activity_onboard.xml	(revision 9047c89414e92fb7f966d2a66d0d704a2ad00450)
++++ b/app/src/main/res/layout/activity_onboard.xml	(date 1650251472552)
+@@ -1,6 +1,107 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-             android:layout_width="match_parent"
+-             android:layout_height="match_parent">
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".OnboardActivity"
++    android:background="@drawable/bg_onboard">
++
++    <ImageButton
++        android:id="@+id/btnNext"
++        android:layout_width="50dp"
++        android:layout_height="50dp"
++        android:background="@drawable/ic_onboard_next"
++        android:contentDescription="@string/app_name"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.623"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.708"
++        tools:ignore="MissingConstraints" />
++
++    <ImageButton
++        android:id="@+id/btnBack"
++        android:layout_width="50dp"
++        android:layout_height="50dp"
++        android:background="@drawable/ic_onboard_back"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.373"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.708"
++        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
++
++    <ImageButton
++        android:id="@+id/btnCorrect"
++        android:layout_width="248dp"
++        android:layout_height="54dp"
++        android:onClick="correct"
++        android:background="@drawable/ic_onboard_connect_divice"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.496"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.612"
++        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
++
++    <ImageButton
++        android:id="@+id/btnBackAC"
++        android:layout_width="59dp"
++        android:layout_height="31dp"
++        android:background="@drawable/ic_back_layout"
++        android:onClick="backly"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.061"
++        tools:ignore="MissingConstraints,OnClick,SpeakableTextPresentCheck" />
++
++    <ImageView
++        android:id="@+id/imgvIS"
++        android:layout_width="304dp"
++        android:layout_height="228dp"
++        android:foregroundGravity="center"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.495"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.18"
++        tools:ignore="MissingConstraints" />
++
++    <ImageView
++        android:id="@+id/imgvPage"
++        android:layout_width="40dp"
++        android:layout_height="30dp"
++        android:foregroundGravity="center"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.703"
++        tools:ignore="MissingConstraints" />
++
++    <TextView
++        android:id="@+id/txtIS"
++        android:layout_width="310dp"
++        android:layout_height="92dp"
++        android:gravity="center"
++        android:textColor="#fff"
++        android:textSize="15sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.495"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.47"
++        tools:ignore="MissingConstraints" />
++
+ 
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/myapp/DeviceActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.myapp;public class DeviceActivity {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/myapp/DeviceActivity.java b/app/src/main/java/com/example/myapp/DeviceActivity.java
+--- a/app/src/main/java/com/example/myapp/DeviceActivity.java	(revision 9047c89414e92fb7f966d2a66d0d704a2ad00450)
++++ b/app/src/main/java/com/example/myapp/DeviceActivity.java	(date 1650250838551)
+@@ -1,2 +1,22 @@
+-package com.example.myapp;public class DeviceActivity {
++package com.example.myapp;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++
++import androidx.annotation.Nullable;
++import androidx.appcompat.app.AppCompatActivity;
++
++public class DeviceActivity extends AppCompatActivity {
++    @Override
++    protected void onCreate(@Nullable Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_device);
++    }
++
++    public void backly(View v)
++    {
++        Intent intent = new Intent(DeviceActivity.this, com.example.myapp.OnboardActivity.class);
++        startActivity(intent);
++    }
+ }
+Index: app/src/main/java/com/example/myapp/OnboardActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.myapp;public class OnboardActivity {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/myapp/OnboardActivity.java b/app/src/main/java/com/example/myapp/OnboardActivity.java
+--- a/app/src/main/java/com/example/myapp/OnboardActivity.java	(revision 9047c89414e92fb7f966d2a66d0d704a2ad00450)
++++ b/app/src/main/java/com/example/myapp/OnboardActivity.java	(date 1650252122934)
+@@ -1,2 +1,68 @@
+-package com.example.myapp;public class OnboardActivity {
++package com.example.myapp;
++
++import android.content.Intent;
++import android.os.Bundle;
++import android.view.View;
++import android.view.View.OnClickListener;
++import android.widget.ImageButton;
++import android.widget.ImageView;
++import android.widget.TextView;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++public class OnboardActivity extends AppCompatActivity {
++    ImageView img,imgv;
++    TextView txtv;
++    ImageButton btn,btnBack,btnNext;
++    int c=1;
++    int[] p = new int[]{R.drawable.page1,R.drawable.page2,R.drawable.page3};
++    int[] f = new int[]{R.drawable.ic_image_hotoyou1,R.drawable.ic_image_hotoyou2,R.drawable.ic_image_hotoyou3};
++    String[] a = new String[]{"Đảm bảo rằng điện thoại và TV (hoặc bộ điều hợp không dây) của bạn được kết nối với cùng một WIFI và tắt VPN.","Bật chức năng “Hiển thị Miracast” trên TV của bạn. (Bạn cần bật theo cách thủ công trên một số thiết bị, vào phần cài đặt hệ thống để kiểm tra).","Nhấp vào nút “Kết nối”, bật chức năng hiển thị không dây trên điện thoại của bạn và chờ để tìm kiếm thiết bị."};
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_onboard);
++        img = findViewById(R.id.imgvIS);
++        imgv = findViewById(R.id.imgvPage);
++        txtv = findViewById(R.id.txtIS);
++        btn = findViewById(R.id.btnCorrect);
++        btnNext = findViewById(R.id.btnNext);
++        btnBack = findViewById(R.id.btnBack);
++        img.setImageResource(f[0]);
++        imgv.setImageResource(p[0]);
++        txtv.setText(a[0]);
++        btnNext.setOnClickListener(new OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                if(c<3){
++                    img.setImageResource(f[c]);
++                    imgv.setImageResource(p[c]);
++                    txtv.setText(a[c]);
++                    c++;
++                }
++            }
++        });
++        btnBack.setOnClickListener(new OnClickListener() {
++            @Override
++            public void onClick(View view) {
++                if(c>0){
++                    c--;
++                    img.setImageResource(f[c]);
++                    imgv.setImageResource(p[c]);
++                    txtv.setText(a[c]);
++                }
++            }
++        });
++    }
++    public void backly(View v)
++    {
++        Intent intent = new Intent(OnboardActivity.this, com.example.myapp.SettingActivity.class);
++        startActivity(intent);
++        finish();
++
++    }
++    public void correct(View view) {
++        Intent intent = new Intent(OnboardActivity.this, com.example.myapp.DeviceActivity.class);
++        startActivity(intent);
++    }
+ }
+Index: app/src/main/res/layout/activity_device.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n             android:layout_width=\"match_parent\"\r\n             android:layout_height=\"match_parent\">\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_device.xml b/app/src/main/res/layout/activity_device.xml
+--- a/app/src/main/res/layout/activity_device.xml	(revision 9047c89414e92fb7f966d2a66d0d704a2ad00450)
++++ b/app/src/main/res/layout/activity_device.xml	(date 1650250595475)
+@@ -1,6 +1,47 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-             android:layout_width="match_parent"
+-             android:layout_height="match_parent">
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:background="@drawable/bg_device"
++    android:layout_height="match_parent">
+ 
++    <ImageButton
++        android:id="@+id/btnBackAC"
++        android:layout_width="59dp"
++        android:layout_height="33dp"
++        android:background="@drawable/ic_back_layout"
++        android:onClick="backly"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.06"
++        tools:ignore="MissingConstraints,OnClick,SpeakableTextPresentCheck" />
++
++    <ImageView
++        android:id="@+id/img1"
++        android:layout_width="328dp"
++        android:layout_height="244dp"
++        android:background="@drawable/ic_divice1"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.493"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.289" />
++
++    <ImageView
++        android:id="@+id/img2"
++        android:layout_width="328dp"
++        android:layout_height="190dp"
++        android:background="@drawable/ic_divice2"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.493"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.707" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.myapp\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.MyApp\">\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            >\r\n\r\n        </activity>\r\n        <activity\r\n            android:exported=\"true\"\r\n            android:name=\".SplashActivity\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity android:name=\".SettingActivity\"></activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 9047c89414e92fb7f966d2a66d0d704a2ad00450)
++++ b/app/src/main/AndroidManifest.xml	(date 1650250921021)
+@@ -24,6 +24,8 @@
+             </intent-filter>
+         </activity>
+         <activity android:name=".SettingActivity"></activity>
++        <activity android:name=".OnboardActivity"></activity>
++        <activity android:name=".DeviceActivity"></activity>
+     </application>
+ 
+ </manifest>
+\ No newline at end of file
+Index: app/src/main/java/com/example/myapp/SettingActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.myapp\r\n\r\nimport android.content.Intent\r\nimport android.os.Bundle\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport kotlinx.android.synthetic.main.activity_setting.*\r\n\r\nclass SettingActivity : AppCompatActivity()  {\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_setting)\r\n        go_back.setOnClickListener {\r\n            startActivity(Intent(this, MainActivity::class.java))\r\n            finish()\r\n        }\r\n        how_to_use.setOnClickListener {\r\n\r\n        }\r\n        remove_ad.setOnClickListener {\r\n\r\n        }\r\n        feed_back.setOnClickListener {\r\n\r\n        }\r\n        share_f.setOnClickListener {\r\n\r\n        }\r\n        rate.setOnClickListener {\r\n\r\n        }\r\n        private_key.setOnClickListener {\r\n\r\n        }\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/myapp/SettingActivity.kt b/app/src/main/java/com/example/myapp/SettingActivity.kt
+--- a/app/src/main/java/com/example/myapp/SettingActivity.kt	(revision 9047c89414e92fb7f966d2a66d0d704a2ad00450)
++++ b/app/src/main/java/com/example/myapp/SettingActivity.kt	(date 1650250838537)
+@@ -14,7 +14,7 @@
+             finish()
+         }
+         how_to_use.setOnClickListener {
+-
++            startActivity(Intent(this,OnboardActivity::class.java))
+         }
+         remove_ad.setOnClickListener {
+ 
