@@ -15,10 +15,10 @@
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.623"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/imgvPage"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708"
+        app:layout_constraintVertical_bias="0.709"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -27,11 +27,11 @@
         android:layout_height="50dp"
         android:background="@drawable/ic_onboard_back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintEnd_toStartOf="@+id/imgvPage"
+        app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708"
+        app:layout_constraintVertical_bias="0.709"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton

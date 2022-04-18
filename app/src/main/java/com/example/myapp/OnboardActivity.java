@@ -3,7 +3,6 @@ package com.example.myapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,26 +30,20 @@ public class OnboardActivity extends AppCompatActivity {
         img.setImageResource(f[0]);
         imgv.setImageResource(p[0]);
         txtv.setText(a[0]);
-        btnNext.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(c<3){
-                    img.setImageResource(f[c]);
-                    imgv.setImageResource(p[c]);
-                    txtv.setText(a[c]);
-                    c++;
-                }
+        btnNext.setOnClickListener(view -> {
+            if(c<3){
+                img.setImageResource(f[c]);
+                imgv.setImageResource(p[c]);
+                txtv.setText(a[c]);
+                c++;
             }
         });
-        btnBack.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(c>0){
-                    c--;
-                    img.setImageResource(f[c]);
-                    imgv.setImageResource(p[c]);
-                    txtv.setText(a[c]);
-                }
+        btnBack.setOnClickListener(view -> {
+            if(c>0){
+                c--;
+                img.setImageResource(f[c]);
+                imgv.setImageResource(p[c]);
+                txtv.setText(a[c]);
             }
         });
     }
